@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+    <header>
+        <h1>Payment Details</h1>
+    </header>
+    <main>
+        <section id="payment-section">
+            <h2>Enter Your Payment Information</h2>
+            <form id="payment-form">
+                <div id="card-element"><!-- Stripe Element will be inserted here --></div>
+                <button id="submit-payment">Pay</button>
+                <div id="card-errors" role="alert"></div>
+            </form>
+        </section>
+    </main>
+    <script src="payment.js"></script>
+</body>
+</html>
